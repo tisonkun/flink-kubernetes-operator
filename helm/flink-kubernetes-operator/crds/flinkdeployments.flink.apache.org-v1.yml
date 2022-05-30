@@ -9059,8 +9059,8 @@ spec:
                     type: array
                   state:
                     enum:
-                    - running
-                    - suspended
+                    - RUNNING
+                    - SUSPENDED
                     type: string
                   savepointTriggerNonce:
                     type: integer
@@ -9068,9 +9068,9 @@ spec:
                     type: string
                   upgradeMode:
                     enum:
-                    - savepoint
-                    - last-state
-                    - stateless
+                    - SAVEPOINT
+                    - LAST_STATE
+                    - STATELESS
                     type: string
                   allowNonRestoredState:
                     type: boolean
